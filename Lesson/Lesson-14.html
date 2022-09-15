@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+     <a href="Lesson -1.html">Lesson 1</a>
+  <a href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a href="Lesson-6.html">Lesson 6</a>
+  <a href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a href="Lesson-11.html">Lesson 11</a>
+  <a href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a class="btn active" href="Lesson-14.html">Lesson 14</a>
+</div>
+
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+  <h1>
+    Lesson 14 JavaScript – Cookies
+    </h1>
+    <h3>
+      What is a Cookie? 
+    </h3>
+    <p>
+      Cookies are small amounts of information that are stored in the user’s computer from a Web page. They can be accessed
+and retrieved by the Web page whenever they are needed. Web pages take advantage of cookies in order to modify the
+page when the user accesses them. Cookies expire after some time set by the Web developer.
+    </p>
+    <p>
+      Syntax for using cookies:
+    </p>
+    <p>
+Document.cookie = “name=value; expires=date; path=path;
+    </p>
+    <p>
+      domain=domain; secure”;
+    </p>
+    <div class="code"> 
+    <p>
+    <b>
+      <.!DOCTYPE html><br>
+<.html><br>
+<.head><br>
+<.script><br>
+function setCookie(cname,cvalue,exdays) {<br>
+ var d = new Date();<br>
+ d.setTime(d.getTime() + (exdays*24*60*60*1000));<br>
+ var expires = "expires=" + d.toGMTString();
+ document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";<br>
+}<br>
+function getCookie(cname) {<br>
+ var name = cname + "=";<br>
+ var decodedCookie = decodeURIComponent(document.cookie);<br>
+ var ca = decodedCookie.split(';');<br>
+ for(var i = 0; i < ca.length; i++) {<br>
+ var c = ca[i];<br>
+ while (c.charAt(0) == ' ') {<br>
+ c = c.substring(1);<br>
+ }<br>
+ if (c.indexOf(name) == 0) {<br>
+ return c.substring(name.length, c.length);<br>
+ }<br>
+ }<br>
+ return "";<br>
+}<br>
+function checkCookie() {<br>
+ var user=getCookie("username");<br>
+ if (user != "") {<br>
+ alert("Welcome again " + user);<br>
+ } else {<br>
+ user = prompt("Please enter your name:","");<br>
+ if (user != "" && user != null) {<br>
+ setCookie("username", user, 30);<br>
+ }<br>
+ }<br>
+}<br>
+<./script><br>
+<./head><br>
+<.body onload="checkCookie()"></body><br>
+<./html><br>
+    </p>
+    </b>
+    </div>
+ 
+<script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>

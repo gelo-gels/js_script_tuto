@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+   <a href="Lesson -1.html">Lesson 1</a>
+  <a href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a href="Lesson-6.html">Lesson 6</a>
+  <a class="btn active" href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a href="Lesson-11.html">Lesson 11</a>
+  <a href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a href="Lesson-14.html">Lesson 14</a>
+</div>
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+  <h1>Lesson 7 JavaScript – Popup Boxes</h1>
+  <h3>What is a Popup Boxes? </h3>
+  <p>Popup boxes are those windows that pop-out of your screen. They could be before a page is fully loaded, effect of an event
+on a page or before leaving a page. JavaScript has three kinds of popup boxes and these are</p>
+  <ul>
+    <li>Alert box</li>
+     <li> Prompt box</li>
+      <li>Confirm box</li>
+  </ul>
+  <p>These popup boxes can be useful in warning the user, gathering user input or simply to verify something.</p>
+  <ul>
+    <li>Alert box</li>
+    <li> Prompt box</li>
+    <li>Confirm box</li>
+  </ul>
+  <p>These popup boxes can be useful in warning the user, gathering user input or simply to verify something.</p>
+<p>ALERT BOX syntax <b>-alert(“message”);</b></p>
+   <p>PROMPT BOX syntax <b>-prompt(“message”, “defaultvalue”);</b></p> 
+<p>CONFIRM BOX syntax <b>-confirm(“message”);</b></p>
+<div class="code"> 
+<p>
+<b>
+  <.!DOCTYPE html><br>
+<.html><br>
+<.head><br>
+<.script type="text/JavaScript"><br>
+function show_prompt()<br>
+{
+var name=prompt("Please enter your name: ",<br>
+"nameless");<br>
+if (name!=null && name!="")<br>
+{
+document.write("Welcome " + name + "! Please<br>
+come in");<br>
+}<br>
+}<br>
+<./script><br>
+<./head><br>
+<.body><br>
+<.input type="button" onclick="show_prompt()"<br>
+value="show prompt box" /><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+<br>
+<p>
+<b>
+  <.!DOCTYPE html><br>
+<.html><br>
+<.head><br>
+<.script type="text/JavaScript"><br>
+function show_confirm()<br>
+{<br>
+var ans=confirm("Do you want to proceed? ");<br>
+if (ans==true)<br>
+{<br>
+document.write("Access granted.");<br>
+}<br>
+else<br>
+{<br>
+document.write("Access denied.");<br>
+}<br>
+}<br>
+<./script><br>
+<./head><br>
+<.body><br>
+<.input type="button" onclick="show_confirm()"<br>
+value="Show confirm box" /><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+
+
+ <script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>

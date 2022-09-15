@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+     <a href="Lesson -1.html">Lesson 1</a>
+  <a href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a class="btn active" href="Lesson-6.html">Lesson 6</a>
+  <a href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a href="Lesson-11.html">Lesson 11</a>
+  <a href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a href="Lesson-14.html">Lesson 14</a>
+</div>
+
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+  <h1>Lesson 6 JavaScript - Operators</h1>
+  <h3>What is an Operator? </h3>
+  <p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and ‘+’ is called the operator. JavaScript
+supports the following types of operators.</p>
+<ul>
+  <li>Arithmetic Operators</li>
+  <li>Comparison Operators</li>
+  <li>Logical (or Relational) Operators</li>
+  <li>Assignment Operators</li>
+  <li>Conditional (or ternary) Operators</li>
+</ul>
+<p>Let’s have a look at all the operators one by one.</p>
+<h3>Arithmetic Operators </h3>
+<p>
+  JavaScript supports the following arithmetic operators:
+Assume variable A holds 10 and variable B holds 20, then:
+</p>
+  <p>Note: Addition operator (+) works for Numeric as well as Strings. e.g. "a" +
+10 will give "a10".</p>
+<p>Example
+The following code shows how to use arithmetic operators in JavaScript</p>
+<div class="code"> 
+<p>
+<b>
+<.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+var a = 33;<br>
+var b = 10;<br>
+var c = "Test";<br>
+var linebreak = "<br />";<br>
+document.write("a + b = ");<br>
+result = a + b;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("a - b = ");<br>
+result = a - b;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("a / b = ");<br>
+result = a / b;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("a % b = ");<br>
+result = a % b;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("a + b + c = ");<br>
+result = a + b + c;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+a = a++;<br>
+document.write("a++ = ");<br>
+result = a++;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+b = b--;<br>
+document.write("b-- = ");<br>
+result = b--;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//--><br>
+<./script><br>
+<.p>Set the variables to different values and then try...<./p><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<h3>Comparison Operators</h3>
+<p>Let us take a simple expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and
+‘+’ is called the operator. JavaScript supports the following</p>
+<p>JavaScript supports the following comparison operators:
+Assume variable A holds 10 and variable B holds 20, then:</p>
+<div class="code"> 
+<p>
+<b>
+  <.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+
+var a = 10;<br>
+var b = 20;<br>
+var linebreak = "<br />";<br>
+document.write("(a == b) => ");<br>
+result = (a == b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a < b) => ");<br>
+result = (a < b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a > b) => ");<br>
+result = (a > b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a != b) => ");<br>
+result = (a != b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a >= b) => ");<br>
+result = (a >= b);<br>
+ 
+</p>
+<.p><br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a <= b) => ");<br>
+result = (a <= b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//--><br>
+<./script><br>
+<.p>Set the variables to different values and different operators and
+then
+try...<./p><br>
+<./body><br>
+<./html><br>
+  
+</p>
+
+<p>
+  <.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+var a = true;<br>
+var b = false;<br>
+var linebreak = "<br />";<br>
+document.write("(a && b) => ");<br>
+result = (a && b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a || b) => ");<br>
+result = (a || b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("!(a && b) => ");<br>
+result = (!(a && b));<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//--><br>
+<./script><br>
+<.p>Set the variables to different values and different operators and
+then
+try...<./p><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<h3>Bitwise Operators </h3>
+<p>JavaScript supports the following bitwise operators:
+Assume variable A holds 2 and variable B holds 3, then:</p>
+<p>Example</p>
+<p>Try the following code to implement Bitwise operator in JavaScript.</p>
+<div class="code"> 
+<p>
+<b>
+  <.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+
+var a = 2; // Bit presentation 10<br>
+var b = 3; // Bit presentation 11<br>
+var linebreak = "<br />";<br>
+document.write("(a & b) => ");<br>
+result = (a & b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a | b) => ");<br>
+result = (a | b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a ^ b) => ");<br>
+result = (a ^ b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(~b) => ");<br>
+result = (~b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a << b) => ");<br>
+result = (a << b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("(a >> b) => ");<br>
+result = (a >> b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//-->
+<./script><br>
+<.p>Set the variables to different values and different operators and then
+try...<./p><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<h3>Assignment Operators</h3>
+<p><h4>Note:</h4> Same logic applies to Bitwise operators, so they will become <<=, >>=, >>=, &=, |= and ^=.
+Example</p>
+<div class="code"> 
+<p>
+<b>
+  <.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+
+var a = 33;<br>
+var b = 10;<br>
+var linebreak = "<.br />";<br>
+document.write("Value of a => (a = b) => ");<br>
+result = (a = b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("Value of a => (a += b) => ");<br>
+result = (a += b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("Value of a => (a -= b) => ");<br>
+result = (a -= b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("Value of a => (a *= b) => ");<br>
+result = (a *= b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("Value of a => (a /= b) => ");<br>
+result = (a /= b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write("Value of a => (a %= b) => ");<br>
+result = (a %= b);<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//--><br>
+<./script><br>
+<.p>Set the variables to different values and different operators and then
+try...<./p><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<h3>Miscellaneous Operators </h3>
+<p>We will discuss two operators here that are quite useful in JavaScript: the conditional
+operator (? :) and the typeof operator.</p>
+<h3>Conditional Operator (? :) </h3>
+<p>The conditional operator first evaluates an expression for a true or false value and then
+executes one of the two given statements depending upon the result of the evaluation.</p>
+<div class="code"> 
+<p>
+<b>
+  <.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+
+var a = 10;<br>
+var b = 20;<br>
+var linebreak = "<.br />";<br>
+document.write ("((a > b) ? 100 : 200) => ");<br>
+result = (a > b) ? 100 : 200;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+document.write ("((a < b) ? 100 : 200) => ");<br>
+result = (a < b) ? 100 : 200;<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//--><br>
+<./script><br>
+<.p>Set the variables to different values and different operators and then
+try...<./p><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<h3>typeof Operator </h3>
+<p>The typeof operator is a unary operator that is placed before its single operand, which
+can be of any type. Its value is a string indicating the data type of the operand.</p>
+<p>The typeof operator evaluates to "number", "string", or "boolean" if its operand is a
+number, string, or boolean value and returns true or false based on the evaluation.
+</p>
+<p>Here is a list of the return values for the typeof Operator.</p>
+<div class="code"> 
+<p>
+<b>
+<.html><br>
+<.body><br>
+<.script type="text/javascript"><br>
+
+var a = 10;<br>
+var b = "String";<br>
+var linebreak = "<.br />";<br>
+result = (typeof b == "string" ? "B is String" : "B is Numeric");<br>
+document.write("Result => ");<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+result = (typeof a == "string" ? "A is String" : "A is Numeric");<br>
+document.write("Result => ");<br>
+document.write(result);<br>
+document.write(linebreak);<br>
+//-->
+<./script><br>
+<.p>Set the variables to different values and different operators and then
+try...<./p><br>
+</.body><br>
+<./html><br>
+</b>
+</p>
+</div>
+
+    
+
+
+ <script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>

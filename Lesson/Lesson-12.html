@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+    <a href="Lesson -1.html">Lesson 1</a>
+  <a href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a href="Lesson-6.html">Lesson 6</a>
+  <a href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a href="Lesson-11.html">Lesson 11</a>
+  <a class="btn active" href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a href="Lesson-14.html">Lesson 14</a>
+</div>
+
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+  <h1>Lesson 12 JavaScript – Date Object and Time
+ Stamps</h1>
+ <h3>
+   What is a Date Object? 
+ </h3>
+ <p>
+   The date object is used to manipulate and access current dates and times
+ </p>
+ <p>
+   myDate = new Date()
+ </p>
+ <div class="code"> 
+ <p>
+ <b>
+   <.!DOCTYPE html><br>
+<.html><br>
+<.body><br>
+<.h2>JavaScript new Date()<./h2><br>
+<.p id="demo"><./p><br>
+<.script><br>
+var d = new Date();<br>
+document.getElementById("demo").innerHTML = d;<br>
+<./script><br>
+<./body><br>
+<./html><br>
+</b>
+ </p>
+ </div>
+ <h3>
+   Table of Methods for the Date Object
+ </h3>
+ <p>
+   Method Description
+<b>Date()</b>- Returns today's date
+<b>getDate()</b>- Returns the day of the month from a date object (1-31)
+<b>getDay()</b>- Returns the day of the week from a date object (0-6)
+<b>getFullYear()</b>- Returns the years as a four-digit number from a date object
+<b>getHours()</b>- Returns the hour of a date object (0-23)
+<b>getMilliseconds()</b>- Returns the milliseconds of a date object (0-999)
+<b>getMinutes()</b>- Returns the minutes of a date object (0-59)
+<b>getMonth()</b>- Returns the month from a date object (0-11)
+<b>getSeconds()</b>- Returns the seconds of a date object (0-59)
+<b>getTime()</b>- Returns the milliseconds since midnight Jan 1, 1970
+<b>setDate()</b>- Sets the day of the month in a date object (1-31)
+<b>setFullYear()</b>- Sets the years as a four-digit number from a date object
+<b>setHours()</b>- Sets the hour of a date object (0-23)
+<b>setMilliseconds()</b>- Sets the milliseconds of a date object (0-999)
+<b>getMinutes()</b>- Sets the minutes of a date object (0-59)
+<b>getMonth()</b>- Sets the month from a date object (0-11)
+<b>getSeconds()</b>- Sets the seconds of a date object (0-59)
+<b>getTime()</b>- Sets the milliseconds since midnight Jan 1, 1970
+<b>toDateString()</b>- Returns the date portion of a date object in readable form
+<b>toLocaleString()</b>- Converts nDate to a string using the default display format used by the user's computer
+<b>IE:</b>- returns MM/DD/YYYY HH:MM:SS (Windows format)
+<b>Netscape:</b>- returns Day of week, month, year HH:MM:SS
+<b>toString()</b>- Converts a date object to a string the date object is used to manipulate and access current dates and times.
+ </p>
+  <h3>Insert Simple Time Stamps </h3>
+  <p>
+    JavaScript is an object-based language which means that there are many predefined objects that you can access and
+manipulate. One of these objects is the Date object which you can make it appear on the screen
+  </p>
+    <h3>JavaScript Timing</h3>
+    <p>
+      Sometimes the user would want to perform certain task after a specific time has elapsed, with JavaScript; it is possible to do 
+    </p>
+    <p>so. The two ways to do these are:</p>
+    <p>setTimeout() executes a code as specified in the future</p>
+    <p>clearTimeout() clears or cancels the setTimeout()</p>
+    <h3>The setTimeout() </h3>
+    <p>
+      Syntax:
+    </p>
+    <p>
+      var t=setTimeout("JavaScript statement", milliseconds); 
+    </p>
+    <p>
+      The syntax above will give a value that will be stored in the variable named t.
+The JavaScript statement is the first parameter of setTimeout() and this could be a statement or a function. The second
+parameter which indicated in milliseconds is the count from now to execute the first parameter. (one second is equal to 1000
+milliseconds).
+    </p>
+    <h3>
+      The clearTimeout() 
+      </h3>
+      <p>
+        Syntax:
+      </p>
+      <p>
+        clearTimeout(setTimeout_variable) 
+      </p>
+      <p>
+        The the setTimeout().
+      </p>
+
+
+
+ <script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+  <a href="Lesson -1.html">Lesson 1</a>
+  <a class="btn active" href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a href="Lesson-6.html">Lesson 6</a>
+  <a href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a href="Lesson-11.html">Lesson 11</a>
+  <a href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a href="Lesson-14.html">Lesson 14</a>
+</div>
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+    <h1>Lesson 2 JavaScript - Syntax</h1>
+<p>JavaScript can be implemented using JavaScript statements that are placed within the <.script>... </.script>  HTML tags in a
+web page, it connotes JavaScript..
+You can place the <.script>tags, containing your JavaScript, anywhere within you web page, but it is normally recommended
+that you should keep it within the <.head> tags.
+The  <.script> tag alerts the browser program to start interpreting all the text between these tags as a script. A simple syntax
+of your JavaScript will appear as follows. </p>
+<p><.script>
+JavaScript code 
+<./script> -->
+</p>
+<h3>The script tag takes two important attributes:</h3>
+<ul>
+  <li>Language: This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although
+recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.
+</li>
+  <li>Type: This attribute is what is now recommended to indicate the scripting language in use and its value should be set
+to "text/javascript".
+So your JavaScript syntax will look as follows</li>
+</ul>
+<p>
+<b>
+  <.script language="javascript" type="text/javascript">
+JavaScript code
+<./script>
+-->
+</b>
+</p>
+<h3>Your First JavaScript Code</h3>
+<p>Let us take a sample example to print out "Hello World". We added an optional HTML comment that surrounds our JavaScript
+code. This is to save our code from a browser that does not support JavaScript. The comment ends with a "//-->". Here "//"
+signifies a comment in JavaScript, so we add that to prevent a browser from reading the end of the HTML comment as a
+piece of JavaScript code. Next, we call a function document.write which writes a string into our HTML document.
+This function can be used to write text, HTML, or both. Take a look at the following code</p>
+<div class="code"> 
+<p>
+<b>
+<.html><br>
+<.body><br>
+<.script language="javascript" type="text/javascript"><br>
+document.write ("Hello World!")<br>
+//-->
+<./script><br>
+<./body><br>
+<./html><br>
+</b>
+</p>
+</div>
+<p>This code will produce the following result:</p>
+<p><b>Hello World!</b></p>
+<h3>Whitespace and Line Breaks</h3>
+<p>JavaScript ignores spaces, tabs, and newlines that appear in JavaScript programs. You can use spaces, tabs, and newlines
+freely in your program and you are free to format and indent your programs in a neat and consistent way that makes the
+code easy to read and understand.</p>
+<h3>Semicolons are Optional </h3>
+<p>
+<b>
+<.script language="javascript" type="text/javascript">
+
+var1 = 10
+var2 = 20
+//-->
+<./script>
+ </p>
+  <p>But when formatted in a single line as follows, you must use semicolons:</p>
+  <p>
+    <.script language="javascript" type="text/javascript">
+
+var1 = 10; var2 = 20;
+//-->
+<./script>
+</b>
+  </p>
+    <p><h4>Note:</h4>: It is a good programming practice to use semicolons.</p>
+    <h3>Case Sensitivity </h3>
+    <p>JavaScript is a case-sensitive language. This means that the language keywords, variables, function names, and any other
+identifiers must always be typed with a consistent capitalization of letters.
+So the identifiers Time and TIME will convey different meanings in JavaScript.
+NOTE: Care should be taken while writing variable and function names in JavaScript.
+</p>
+<h3>Comments in JavaScript </h3>
+<p>JavaScript supports both C-style and C++-style comments. Thus:
+-Any text between a // and the end of a line is treated as a comment and is ignored by JavaScript.
+-Any text between the characters /* and */ is treated as a comment. This may span multiple lines.
+-JavaScript also recognizes the HTML comment opening sequence . JavaScript treats this as a single-line comment, just as
+it does the // comment.
+-The HTML comment closing sequence --> is not recognized by JavaScript so it should be written as //-->.</p>
+<p>Example
+The following example shows how to use comments in JavaScript.</p>
+<p>
+<b>
+  <.script language="javascript" type="text/javascript">
+
+// This is a comment. It is similar to comments in C++
+/*
+* This is a multiline comment in JavaScript
+* It is very similar to comments in C Programming
+*/
+//-->
+<./script>
+</b>
+</p>
+
+
+ <script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>

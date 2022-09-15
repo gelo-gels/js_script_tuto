@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript project</title>
+	<link rel="stylesheet"  href="style - 2.css">
+     </head>
+<body bgcolor="#fe7140">
+ 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img1.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img2.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img3.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="../img/img4.png" style="width:100%">
+  <div class="text">#Code is Fun</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<br>
+	 <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="../index.html">Home</a>
+    <a href="Lesson -1.html">Lesson 1</a>
+  <a href="Lesson-2.html">Lesson 2</a>
+  <a href="Lesson-3.html">Lesson 3</a>
+  <a href="Lesson-4.html">Lesson 4</a>
+  <a href="Lesson-5.html">Lesson 5</a>
+    <a href="Lesson-6.html">Lesson 6</a>
+  <a href="Lesson-7.html">Lesson 7</a>
+  <a href="Lesson-8.html">Lesson 8</a>
+  <a href="Lesson-9.html">Lesson 9</a>
+  <a href="Lesson-10.html">Lesson 10</a>
+    <a class="btn active"  href="Lesson-11.html">Lesson 11</a>
+  <a href="Lesson-12.html">Lesson 12</a>
+  <a href="Lesson-13.html">Lesson 13</a>
+  <a href="Lesson-14.html">Lesson 14</a>
+</div>
+
+
+  
+<div id="main">
+   <button class="openbtn" onclick="openNav()">start</button>
+  </div>
+  <br>
+
+  <div class="">
+  <h1>Lesson 11 JavaScript – Events</h1>
+  <h3>What are Events? </h3>
+  <p>
+    It is possible to create dynamic Web pages using JavaScript since it can detect events. Events are actions that are triggered
+either by mouse click, function calls, keyboard strokes, loading of images, submitting an HTML form, etc.
+Events are usually used in connection with functions. Functions will not work without a force that will trigger it.
+  </p>
+  <p>Table of Event Triggers</p>
+  <p>
+   <br> Attribute To Trigger the Event<br>
+<b>onabort</b><span style="padding: 0 10px;">- The loading of an event is interrupted<br>
+<b>onblur</b><span style="padding: 0 10px;">- An element loses focus<br>
+<b>onchange</b><span style="padding: 0 10px;">- The user changes the content of a field<br>
+<b>onclick</b><span style="padding: 0 10px;">- Mouse click of an object<br>
+<b>ondblclick</b><span style="padding: 0 10px;">- Double mouse click of an object<br>
+<b>onerror</b><span style="padding: 0 10px;">- An error occurs when loading a document or image<br>
+<b>onfocus</b><span style="padding: 0 10px;">- An elemnt gets focus<br>
+<b>onkeydown</b><span style="padding: 0 10px;">- A keyboard key is pressed<br>
+<b>onkeypress</b><span style="padding: 0 10px;">- A keyboard key is held down<br>
+<b>onkeyup</b><span style="padding: 0 10px;">- A keyboard key is released<br>
+<b>onload</b><span style="padding: 0 10px;">- A page or image is finished loading<br>
+<b>onmousedown</b><span style="padding: 0 10px;">- A mouse button is pressed<br>
+<b>onmousemove</b><span style="padding: 0 10px;">- The mouse is moved<br>
+<b>onmouseout</b><span style="padding: 0 10px;">- The mouse is moved off an element<br>
+<b>onmouseover</b><span style="padding: 0 10px;">- The mouse is moved over an element<br>
+<b>onmouseup</b><span style="padding: 0 10px;">- A mouse button is released<br>
+<b>onreset</b><span style="padding: 0 10px;">- The reset button is clicked<br>
+<b>onresize</b><span style="padding: 0 10px;"> -A window or frame is resized<br>
+<b>onselect</b>-<span style="padding: 0 10px;">-Text is selected<br>
+<b>onsubmit</b><span style="padding: 0 10px;">- The submit button is clicked<br>
+<b>onunload</b><span style="padding: 0 10px;">-The user exits the page<br>
+
+  </p>
+    
+
+
+ <script>
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("").style.marginLeft= "0";
+}
+ 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>
+  </body>
+</html>
